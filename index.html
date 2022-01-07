@@ -7,6 +7,21 @@
 <script src="jquery.js"></script>
 <script src="bootstrap.js"></script>
 <script src="popper.js"></script>
+<script>	
+		$(document).ready(function(){
+  		$('[data-toggle="popover"]').popover();      
+		});
+</script>
+<style type="text/css">
+		#plan:hover{
+			text-decoration: underline;
+			color:#ff471a; 
+		}
+		#zoom:hover{
+ 			-webkit-transform: scaleX(-1);
+  			transform: scaleX(-1);
+ 		}
+</style>
 </head>
 <body>
 <header>
@@ -101,18 +116,18 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-			<a href="batsmans.html"><img id="boom" src="rahul.jpg" class="img-thumbnail mx-auto d-block">
-			<p style="text-align:center; text-decoration:none;">What is Batsman ? list of Top 10 Batsman's in world cricket</p></p>
+			<a href="batsmans.html"><img id="zoom" src="rahul.jpg" class="img-thumbnail mx-auto d-block">
+			<p id="plan"style="text-align:center;color:red;">What is Batsman ? list of Top 10 Batsman's in world cricket</p></p>
 			</a>
 		</div>
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-			<a href="bowler.html"><img src="jofra.jpg" class="img-thumbnail mx-auto d-block">
-			<p style="text-align:center; text-decoration:none; color:pitch;">What is Bowler ?list of Top 10 Bowler's in world cricket</p></p>			
+			<a href="bowler.html"><img src="jofra.jpg" id="zoom" class="img-thumbnail mx-auto d-block">
+			<p id="plan"style="text-align:center; color:red;">What is Bowler ?list of Top 10 Bowler's in world cricket</p></p>			
 			</a>
 		</div>
 		<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-			<a href="allrounder.html" style="text-decoration:none;"><img src="morris.jpg"class="img-thumbnail mx-auto d-block ">
-			<p style="text-align:center;">What is All-Rounder ? list of Top 10 All-Rounder's in world cricket</p>
+			<a href="allrounder.html" style="text-decoration:none;"><img src="morris.jpg" id="zoom" class="img-thumbnail mx-auto d-block ">
+			<p id="plan"style="text-align:center; color:red;">What is All-Rounder ? list of Top 10 All-Rounder's in world cricket</p>
 			</a>
 		</div>
 	</div>
@@ -120,13 +135,13 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-			<a href="formats.html"><img src="fromat.png" class="img-thumbnail mx-auto d-block">
-			<p style="text-align:center">How many Formats in cricket ?</p>
+			<a href="formats.html"><img src="fromat.png" id="zoom" class="img-thumbnail mx-auto d-block">
+			<p id="plan"style="text-align:center; color:red;">How many Formats in cricket ?</p>
 			</a>
 		</div>
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-			<a href="teams.html"><img src="team.jpg" class="img-thumbnail mx-auto d-block">
-			<p style="text-align:center">teams Ranking in cricket</p>
+			<a href="teams.html"><img src="team.jpg" id="zoom" class="img-thumbnail mx-auto d-block">
+			<p id="plan" style="text-align:center; color:red;">teams Ranking in cricket</p>
 			</a>
 		</div>
 	</div>
